@@ -32,6 +32,8 @@ You will receive an object:
 OPENAI_API_KEY = <your secret key from your account in Open AI>
 ```
 
+NOTE: Get your API key from https://beta.openai.com/
+
 2. Run `npm install`
 
 3. Run `npm start`
