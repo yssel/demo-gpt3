@@ -1,0 +1,16 @@
+{
+  "name": "gpt3-parse",
+  "version": "1.0.0",
+  "description": "Demo of parsing unstructured data using GPT-3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Blessy Salvania",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.0.0",
+    "prompt": "^1.3.0"
+  }
+}
