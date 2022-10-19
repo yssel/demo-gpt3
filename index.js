@@ -17,20 +17,13 @@ const schema = {
 };
 
 prompt.start();
-
-let gptQuery, gptKeywords;
-
-const getInput = async() => {
-  
-}
-
 prompt.get(schema, async function (err, result) {
   if (err) {
     console.log(err);
     return 1;
   }
-  gptQuery = result.query;
-  gptKeywords = result.keywords.split(',').map(key => key.trim());
+  const gptQuery = result.query;
+  const gptKeywords = result.keywords.split(',').map(key => key.trim());
 
   console.log('========= GPT-3 Query =========')
   console.log('Command-line input received:');
@@ -43,17 +36,3 @@ prompt.get(schema, async function (err, result) {
   console.log('========= GPT-3 RESULTS =========')
   console.log(response);
 });
-
-
-
-
-
-
-// console.log('Enter query for GPT-3: ');
-// const queryInput = prompt();
-// console.log('>> Query: ', queryInput);
-// console.log('Enter keywords to be extracted (ex: \'Action, Domain Name, Price, Frequency, Duration\'): ');
-// const keywordsInput = prompt();
-// const keywords = keywordsInput.split(',');
-// console.log('>> Keywords: ', keywords);
-// queryGPT3('anything');
